@@ -1,0 +1,23 @@
+Note: everthing before first left parenthesis is treated as a comment.
+2 objects to be transported
+
+(London PLACE)
+(Paris PLACE)
+(JFK PLACE)
+(r1 ROCKET)
+(r2 ROCKET)
+(alex CARGO)
+(jason CARGO)
+
+(preconds
+(at r1 London)
+(at r2 London)
+(at alex London)
+(at jason London)
+(has-fuel r1)
+(has-fuel r2))
+
+
+(effects
+(at alex Paris)
+(at jason JFK))

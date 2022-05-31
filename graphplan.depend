@@ -1,0 +1,87 @@
+# depslib dependency file v1.0
+809907318 source:c:\users\kumar\desktop\planning\dummy.c
+	"graphplan.h"
+
+809902438 c:\users\kumar\desktop\planning\graphplan.h
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<strings.h>
+
+1653898323 source:c:\users\kumar\desktop\planning\graphplan.c
+	"graphplan.h"
+	<sys/time.h>
+
+809902425 source:c:\users\kumar\desktop\planning\hash.c
+	"graphplan.h"
+
+809902433 source:c:\users\kumar\desktop\planning\lex.yy.c
+	<stdio.h>
+	<stdlib.h>
+	<osfcn.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	"graphplan.h"
+	"y.tab.h"
+
+809902445 c:\users\kumar\desktop\planning\y.tab.h
+
+809902406 source:c:\users\kumar\desktop\planning\planner.c
+	"graphplan.h"
+
+809902421 source:c:\users\kumar\desktop\planning\utilities.c
+	"graphplan.h"
+
+809902415 source:c:\users\kumar\desktop\planning\y.tab.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"graphplan.h"
+	<stdio.h>
+	<alloca.h>
+	<malloc.h>
+
+809907318 source:c:\users\chamal\desktop\planning\dummy.c
+	"graphplan.h"
+
+809902438 c:\users\chamal\desktop\planning\graphplan.h
+	<stdlib.h>
+	<stdio.h>
+	<ctype.h>
+	<strings.h>
+
+1653898323 source:c:\users\chamal\desktop\planning\graphplan.c
+	"graphplan.h"
+	<sys/time.h>
+
+809902425 source:c:\users\chamal\desktop\planning\hash.c
+	"graphplan.h"
+
+809902433 source:c:\users\chamal\desktop\planning\lex.yy.c
+	<stdio.h>
+	<stdlib.h>
+	<osfcn.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	"graphplan.h"
+	"y.tab.h"
+
+809902445 c:\users\chamal\desktop\planning\y.tab.h
+
+809902406 source:c:\users\chamal\desktop\planning\planner.c
+	"graphplan.h"
+
+809902421 source:c:\users\chamal\desktop\planning\utilities.c
+	"graphplan.h"
+
+809902415 source:c:\users\chamal\desktop\planning\y.tab.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"graphplan.h"
+	<stdio.h>
+	<alloca.h>
+	<malloc.h>
+

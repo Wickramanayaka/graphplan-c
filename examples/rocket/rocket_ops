@@ -1,0 +1,26 @@
+(operator
+ LOAD
+ (params
+  (<object> CARGO) (<rocket> ROCKET) (<place> PLACE))
+ (preconds 
+  (at <rocket> <place>)  (at <object> <place>))
+ (effects 
+  (in <object> <rocket>) (del at <object> <place>)))
+
+(operator
+ UNLOAD
+ (params
+  (<object> CARGO) (<rocket> ROCKET) (<place>  PLACE))
+ (preconds 
+  (at <rocket> <place>)  (in <object> <rocket>))
+ (effects 
+  (at <object> <place>) (del in <object> <rocket>)))
+
+(operator
+ MOVE
+ (params
+  (<rocket> ROCKET) (<from> PLACE) (<to> PLACE))
+ (preconds 
+  (has-fuel <rocket>) (at <rocket> <from>))
+ (effects  
+  (at <rocket> <to>) (del has-fuel <rocket>) (del at <rocket> <from>)))

@@ -1,0 +1,14 @@
+Note: Cargo (C1) to be transported to Airport (JFK) from Airport (SFO) by a plane (P1).
+
+(SFO AIRPORT)
+(JFK AIRPORT)
+(P1 PLANE)
+(C1 CARGO)
+
+(preconds
+(at P1 SFO)
+(at C1 SFO))
+
+
+(effects
+(at C1 JFK))

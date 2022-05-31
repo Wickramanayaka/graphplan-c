@@ -1,0 +1,26 @@
+(operator
+ LOAD
+ (params
+  (<object> CARGO) (<plane> PLANE) (<airport> AIRPORT))
+ (preconds 
+  (at <plane> <airport>)  (at <object> <airport>))
+ (effects 
+  (in <object> <plane>) (del at <object> <airport>)))
+
+(operator
+ UNLOAD
+ (params
+  (<object> CARGO) (<plane> PLANE) (<airport>  AIRPORT))
+ (preconds 
+  (at <plane> <airport>)  (in <object> <plane>))
+ (effects 
+  (at <object> <airport>) (del in <object> <plane>)))
+
+(operator
+ FLY
+ (params
+  (<plane> PLANE) (<from> AIRPORT) (<to> AIRPORT))
+ (preconds 
+  (at <plane> <from>))
+ (effects  
+  (at <plane> <to>) (del at <plane> <from>)))
