@@ -4,6 +4,11 @@ This is the example used by MSc. DS & AI in University of Sri Jayewardenepura.
 
 <hr>
 
+### Problem to solve ###
+Here our problem is to transport Cargo (C1) from airport (SFO) to airport (JFK) by plane (P1) and also transport Cargo (C2) from airport (JFK) to airport (SFO) by Plane (P2)
+
+<hr>
+
 Graphplan is a general-purpose planner for STRIPS-style domains, based on ideas used in graph algorithms.
 To run, it will need for an "operator" file that corresponds to a domain in World, and then it will ask for a
 "facts" file that corresponds to a problem in World.  
@@ -79,7 +84,12 @@ FLY action schema in STRIP
   (at <plane> <to>) (del at <plane> <from>)))
 ```
 
-The problem should be defined in *_facts file with initial state and goal state. Let's see how we convert PDDL into STRIP.
+<hr>
+
+The problem should be defined in aircargo_facts file with initial state and goal state. Let's see how we convert PDDL into STRIP.
+
+Here our problem is to transport Cargo (C1) from airport (SFO) to airport (JFK) by plane (P1) and also transport Cargo (C2) from airport (JFK) to airport (SFO) by Plane (P2)
+
 
 PDDL format
 
