@@ -17,7 +17,7 @@ git clone https://github.com/Wickramanayaka/graphplan-c.git
 
 * Using your favorite terminal (DOS or Git Bash or Powershell) change directory into graphplan-c/bin/Debug
 ```
-$ cd graphplan-c\bin\Debug
+$ cd graphplan-c/bin/Debug
 ```
 * If you are using DOS (cmd.exe) command prompt, copy and paste below command line into the terminal and hit Enter key.
 ```
