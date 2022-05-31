@@ -83,5 +83,86 @@ Note: Make sure to add <b>' ./ '</b> if you are using git-bash or Powershell.
 ``` graphplan.exe -o ../../examples/rocket/rocket_ops -f ../../examples/rocket/rocket_facts -O IL -d ```
 
 <hr>
+<br>
 
 ### How to create your own world ###
+
+<br>
+
+Graphplan is a general-purpose planner for STRIPS-style domains, based on ideas used in graph algorithms.
+To run, it will need for an "operator" file that corresponds to a domain in World, and then it will ask for a
+"facts" file that corresponds to a problem in World.  
+
+Naming convention is:
+
+* operator files look like: domainname_ops
+* facts files look like: domainname_facts
+
+Eg:
+
+Our aircargo_ops file contains all the action schema in STRIP-style. If we take a look at PDDL vs STRIP it should like below.
+
+LOAD action schema in PDDL format
+
+```
+Action(Load(c,p,a)),
+     PRECOND: At(c,a) ^ At(p,a) ^ Cargo(c) ^ Plane(p) ^ Airport(a) 
+     EFFECT: ~At(c,a) ^ In(c,a)
+```
+
+LOAD action schema in STRIP
+
+```
+(operator
+ LOAD
+ (params
+  (<object> CARGO) (<plane> PLANE) (<airport> AIRPORT))
+ (preconds 
+  (at <plane> <airport>)  (at <object> <airport>))
+ (effects 
+  (in <object> <plane>) (del at <object> <airport>)))
+```
+
+The problem should be defined in *_facts file with initial state and goal state. Let's see how we convert PDDL into STRIP.
+
+PDDL format
+
+```
+Init(At(C1,SFO) ^ At(C2,JFK) ^ At(P1,SFO) ^ At(P2,JFK) ^ Cargo(C1) ^ Cargo(C2) ^ Plane(P1) ^ Plane(P2) ^ Airport(JFK) ^ Airport(SFO))
+
+Goal(At(C1,JFK) ^ At(C2,SFO))
+```
+
+STRIP-style
+
+```
+(SFO AIRPORT)
+(JFK AIRPORT)
+(P1 PLANE)
+(P2 PLANE)
+(C1 CARGO)
+(C2 CARGO)
+
+(preconds
+(at P1 SFO)
+(at P2 JFK)
+(at C1 SFO)
+(at C2 JFK))
+
+(effects
+(at C1 JFK)
+(at C2 SFO))
+```
+
+<br>
+<hr>
+<b>DISCLAIMER</b><br>
+This software is made available AS IS, and neither the me nor authors nor CMU make any warranty about the software or its performance. All the copyrights and ownerships are belongs to their respective authors.
+
+<br> 
+
+Visit <a href='https://www.cs.cmu.edu/~avrim/graphplan.html'>Graphplan Home Page.</a>
+
+Visit <a href='https://www.codeblocks.org'>Code Blocks website.</a>
+
+Visit <a href='https://www.sjp.ac.lk/'>University of Sri Jayewadenepura.</a>

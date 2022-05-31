@@ -1,14 +1,19 @@
-Note: Cargo (C1) to be transported to Airport (JFK) from Airport (SFO) by a plane (P1).
+Note: Cargo (C1) to be transported to Airport (JFK) from Airport (SFO) by a plane (P1). 
+Cargo (C2) to be transported to Airport (SFO) from Airport (JFK) by a plane (P2).
 
 (SFO AIRPORT)
 (JFK AIRPORT)
 (P1 PLANE)
+(P2 PLANE)
 (C1 CARGO)
+(C2 CARGO)
 
 (preconds
 (at P1 SFO)
-(at C1 SFO))
-
+(at P2 JFK)
+(at C1 SFO)
+(at C2 JFK))
 
 (effects
-(at C1 JFK))
+(at C1 JFK)
+(at C2 SFO))
