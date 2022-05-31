@@ -81,13 +81,32 @@ https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-mingw-32bit-
 
 ### Build from the source - macOS Monterey ###
 
-* Using zsh terminal navigate into graphplan folder.
+* Using zsh terminal navigate into graphplan-c folder.
 * Run below command
 ```
 % make clean
 % make
 ```
-* The build executable file 'graphplan' will be placed in graphplan/bin/Debug/ folder.
+* The build executable file 'graphplan' will be placed in graphplan-c/bin/Debug/ folder.
+
+<hr>
+
+### Build from the source - Ubuntu (WSL2 - Ubuntu 20.04) ###
+
+* Make sure you have downloaded zip or cloned repository
+* Extracted to a desire location
+* Using bash terminal navigate into graphplan-c folder.
+* Run below command
+```
+% make clean
+% make
+```
+* The build executable file 'graphplan' will be placed in graphplan-c/bin/Debug/ folder.
+* You below command to install gcc if your Ubuntu distribution does not have it.
+```
+sudo apt update
+sudo apt install build-essential
+```
 
 <hr>
 
