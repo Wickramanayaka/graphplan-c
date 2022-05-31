@@ -1,3 +1,7 @@
+## Graphplan Algorithm ##
+
+<br>
+
 This is the original work of  Avrim Blum, Merrick Furst, John Langford took it from https://www.cs.cmu.edu/~avrim/graphplan.html.
 
 I made it work with the latest gcc (i686-w64-mingw32) compiler 
