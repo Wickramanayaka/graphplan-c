@@ -29,7 +29,25 @@ graphplan.exe -o ../../examples/aircargo/aircargo_ops -f ../../examples/aircargo
 ```
 <hr>
 
-### Build from the source ###
+### Run the pre-build macOS Monterey (Intel chip) binary ###
+
+* Git clone or download the code
+```
+git clone https://github.com/Wickramanayaka/graphplan-c.git
+```
+
+* Using <b>zsh</b> terminal change directory into graphplan-c/bin/Debug
+```
+% cd graphplan-c/bin/Debug
+```
+* Copy and paste below command line into the terminal and hit Enter key.
+```
+% ./graphplan -o ../../examples/aircargo/aircargo_ops -f ../../examples/aircargo/aircargo_facts -O IL -d
+```
+
+<hr>
+
+### Build from the source - Microsoft Windows 10/11 ###
 
 * The original code was written in 1997 and I used the following compiler provided by <a href="https://www.codeblocks.org/downloads/binaries/">Code Blocks </a> the well-known C/C++ IDE to build the application.
 * Download the <a href='https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-mingw-32bit-setup.exe'>``` codeblocks-20.03-32bit-mingw-32bit-setup.exe ```</a> exact version from the link below.
@@ -58,6 +76,18 @@ https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03-32bit-mingw-32bit-
 * Browse the ``` graphplan-c ``` folder (This is the folder you have cloned or downloaded and extracted previously) in your pc and select ``` graphplan.cbp ``` and open it
 * Navigate to ``` Build -> Build and run ```
 * Once the build process has completed the application will be loaded there you can provide *_ops and *_facts files and few more parameters to the application then the application will output the result.
+
+<hr>
+
+### Build from the source - macOS Monterey ###
+
+* Using zsh terminal navigate into graphplan folder.
+* Run below command
+```
+% make clean
+% make
+```
+* The build executable file 'graphplan' will be placed in graphplan/bin/Debug/ folder.
 
 <hr>
 
